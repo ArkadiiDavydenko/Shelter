@@ -1,3 +1,8 @@
+:root {
+  font-size: 10px;
+}
+
+
 body {
   font-family: 'Georgia';
 }
@@ -7,6 +12,7 @@ h1 {
   font-weight: 400;
   font-size: 32px;
   line-height: 110%;
+  letter-spacing: 0.06em;
 }
 
 h2 {

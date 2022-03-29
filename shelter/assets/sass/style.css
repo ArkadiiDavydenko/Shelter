@@ -1,3 +1,7 @@
+:root {
+  font-size: 10px;
+}
+
 body {
   font-family: "Georgia";
 }
@@ -7,6 +11,7 @@ h1 {
   font-weight: 400;
   font-size: 32px;
   line-height: 110%;
+  letter-spacing: 0.06em;
 }
 
 h2 {
@@ -30,6 +35,27 @@ h4 {
   line-height: 115%;
 }
 
+.button {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.7rem;
+  line-height: 130%;
+  padding: 15px 45px;
+  color: #292929;
+  background: #FFFFFF;
+  border: 2px solid #F1CDB3;
+  border-radius: 100px;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.button:hover {
+  background: #FDDCC4;
+  border: 2px solid #FDDCC4;
+}
+
 .wrapper {
   max-width: 1200px;
   margin: auto;
@@ -43,6 +69,45 @@ h4 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+}
+
+.logo-link {
+  text-decoration: none;
+}
+
+.logo-link__title {
+  color: #F1CDB3;
+}
+
+.logo-link__subtitle {
+  color: #4C4C4C;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.1em;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+}
+
+.navigation__item {
+  list-style: none;
+  padding-left: 35px;
+}
+
+.navigation__link {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 160%;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .our-friends {

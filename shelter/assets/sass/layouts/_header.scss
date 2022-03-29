@@ -1,10 +1,48 @@
 .header {
   padding: 60px 0;
-
 }
 
 .header__wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+}
+
+.logo-link {
+  text-decoration: none;
+}
+
+.logo-link__title {
+  color: $color-primary;
+}
+
+.logo-link__subtitle {
+  color: $color-dark-xl;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.1em;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+}
+
+.navigation__item {
+  list-style: none;
+  padding-left: 35px;
+}
+
+.navigation__link {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 160%;
+  text-decoration: none;
+  cursor: pointer;
 }
