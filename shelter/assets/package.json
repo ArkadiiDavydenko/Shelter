@@ -12,5 +12,8 @@
     "url": "\\"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "normalize-scss": "^7.0.1"
+  }
 }

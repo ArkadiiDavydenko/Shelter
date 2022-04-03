@@ -11,10 +11,13 @@
   border-radius: 100px;
   letter-spacing: 0.06em;
   cursor: pointer;
-  transition: all .3s;
 }
 
 .button:hover {
   background: $color-primary-light;
   border: 2px solid $color-primary-light;
+}
+
+.button {
+  @extend %transition;
 }
