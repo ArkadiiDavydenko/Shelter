@@ -1,0 +1,15 @@
+.about {
+  padding-top: 80px;
+}
+
+.about__picture {
+  height: 408px;
+  width: 300px;
+  background-image: url("../images/about-pets.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.about__content {
+  max-width: 430px;
+}

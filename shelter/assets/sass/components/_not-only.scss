@@ -1,0 +1,34 @@
+.not-only {
+  background-image: url("../images/start-screen-background.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 60px;
+}
+
+.not-only__content {
+  margin-top: 163px;
+  max-width: 460px;
+}
+
+.not-only__title {
+  max-width: 310px;
+  color: $color-light-xl;
+}
+
+.not-only__text {
+  color: $color-dark-s;
+  margin: 42px 0 39px;
+}
+
+//.not-only__buttons {
+//  width: 207px;
+//  height: 52px;
+//}
+
+.not-only__picture {
+  height: 728px;
+  width: 698px;
+  background-image: url("../images/start-screen-puppy.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}

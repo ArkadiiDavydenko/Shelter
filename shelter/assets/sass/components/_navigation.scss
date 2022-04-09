@@ -1,0 +1,23 @@
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+.navigation__item {
+  list-style: none;
+  padding-left: 36px;
+}
+
+.navigation__link {
+  text-decoration: none;
+  cursor: pointer;
+  color: $color-dark-s;
+  @extend %transition;
+  &_active {
+    padding-bottom: 3px;
+    border-bottom: 3px solid $color-primary;
+  }
+}

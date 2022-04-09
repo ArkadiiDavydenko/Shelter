@@ -1,22 +1,22 @@
 .button {
-  font-family: 'Georgia';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.7rem;
-  line-height: 130%;
-  padding: 15px 45px;
+  @extend %font-primary;
+  @include font (1.7rem, 130%);
+  padding: 14px 42px;
   color: $color-dark-3xl;
   background: $color-light-xl;
   border: 2px solid $color-primary;
   border-radius: 100px;
   letter-spacing: 0.06em;
   cursor: pointer;
+  &_colored {
+    background: $color-primary;
+  }
+  &:hover {
+    background: $color-primary-light;
+    border: 2px solid $color-primary-light;
+  }
 }
 
-.button:hover {
-  background: $color-primary-light;
-  border: 2px solid $color-primary-light;
-}
 
 .button {
   @extend %transition;

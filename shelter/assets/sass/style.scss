@@ -13,7 +13,12 @@
 //Layouts
 @import "layouts/wrapper";
 @import "layouts/header";
+@import "layouts/columns";
 
 //Components
+@import "components/header";
+@import "components/not-only";
+@import "components/about";
 @import "components/our-friends";
 @import "components/donation";
+@import "components/navigation";

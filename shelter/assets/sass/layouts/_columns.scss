@@ -1,0 +1,8 @@
+
+.layout-3-column {
+  @include columns();
+}
+
+.layout-2-column {
+  @include columns();
+}

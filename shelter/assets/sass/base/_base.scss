@@ -4,22 +4,29 @@
 
 
 body {
-  font-family: 'Georgia';
+  @extend %font-add;
+  @include font (1.5rem, 160%);
 }
 
 h1 {
-  @include font (32px, 110%);
+  @extend %font-primary;
+  @include font (3.2rem, 110%);
   letter-spacing: 0.06em;
+  margin: 0;
 }
 
 h2 {
-  @include font (44px, 130%);
+  @extend %font-primary;
+  @include font (4.4rem, 130%);
+  margin: 0;
 }
 
 h3 {
-  @include font (35px, 130%);
+  @extend %font-primary;
+  @include font (3.5rem, 130%);
 }
 
 h4 {
-  @include font (20px, 115%);
+  @extend %font-primary;
+  @include font (2rem, 115%);
 }

@@ -449,8 +449,16 @@ template {
   display: none;
 }
 
-.button {
+.navigation__link, .button {
   transition: all 0.3s;
+}
+
+.button, h4, h3, h2, h1 {
+  font-family: "Georgia";
+}
+
+body {
+  font-family: "Arial";
 }
 
 :root {
@@ -458,45 +466,49 @@ template {
 }
 
 body {
-  font-family: "Georgia";
+  font-size: 1.5rem;
+  line-height: 160%;
+  font-style: normal;
+  font-weight: 400;
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 3.2rem;
   line-height: 110%;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0.06em;
+  margin: 0;
 }
 
 h2 {
-  font-size: 44px;
+  font-size: 4.4rem;
   line-height: 130%;
   font-style: normal;
   font-weight: 400;
+  margin: 0;
 }
 
 h3 {
-  font-size: 35px;
+  font-size: 3.5rem;
   line-height: 130%;
   font-style: normal;
   font-weight: 400;
 }
 
 h4 {
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 115%;
   font-style: normal;
   font-weight: 400;
 }
 
 .button {
-  font-family: "Georgia";
-  font-style: normal;
-  font-weight: 400;
   font-size: 1.7rem;
   line-height: 130%;
-  padding: 15px 45px;
+  font-style: normal;
+  font-weight: 400;
+  padding: 14px 42px;
   color: #292929;
   background: #FFFFFF;
   border: 2px solid #F1CDB3;
@@ -504,7 +516,9 @@ h4 {
   letter-spacing: 0.06em;
   cursor: pointer;
 }
-
+.button_colored {
+  background: #F1CDB3;
+}
 .button:hover {
   background: #FDDCC4;
   border: 2px solid #FDDCC4;
@@ -516,7 +530,7 @@ h4 {
 }
 
 .header {
-  padding: 60px 0;
+  padding-top: 60px;
 }
 
 .header__wrapper {
@@ -535,33 +549,77 @@ h4 {
 }
 
 .logo-link__subtitle {
-  color: #4C4C4C;
-  font-family: "Arial";
-  font-style: normal;
-  font-weight: 400;
+  color: #FFFFFF;
   font-size: 1.3rem;
   line-height: 1.5rem;
-  letter-spacing: 0.1em;
-}
-
-.navigation {
-  display: flex;
-  flex-direction: row;
-}
-
-.navigation__item {
-  list-style: none;
-  padding-left: 35px;
-}
-
-.navigation__link {
-  font-family: "Arial";
   font-style: normal;
   font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 160%;
-  text-decoration: none;
-  cursor: pointer;
+  letter-spacing: 0.1em;
+  margin: 10px 0 0 4px;
+}
+
+.layout-3-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.layout-2-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.header {
+  background-image: url("../images/start-screen-background.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.not-only {
+  background-image: url("../images/start-screen-background.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 60px;
+}
+
+.not-only__content {
+  margin-top: 163px;
+  max-width: 460px;
+}
+
+.not-only__title {
+  max-width: 310px;
+  color: #FFFFFF;
+}
+
+.not-only__text {
+  color: #CDCDCD;
+  margin: 42px 0 39px;
+}
+
+.not-only__picture {
+  height: 728px;
+  width: 698px;
+  background-image: url("../images/start-screen-puppy.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.about {
+  padding-top: 80px;
+}
+
+.about__picture {
+  height: 408px;
+  width: 300px;
+  background-image: url("../images/about-pets.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.about__content {
+  max-width: 430px;
 }
 
 .our-friends {
@@ -570,6 +628,29 @@ h4 {
 
 .donation {
   background: #F6F6F6;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+.navigation__item {
+  list-style: none;
+  padding-left: 36px;
+}
+
+.navigation__link {
+  text-decoration: none;
+  cursor: pointer;
+  color: #CDCDCD;
+}
+.navigation__link_active {
+  padding-bottom: 3px;
+  border-bottom: 3px solid #F1CDB3;
 }
 
 /*# sourceMappingURL=style.css.map */
