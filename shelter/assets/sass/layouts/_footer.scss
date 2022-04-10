@@ -1,0 +1,67 @@
+.footer {
+  background-image: url("../images/footer-gradient-background.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer__wrapper {
+  padding-top: 40px
+}
+
+.footer__picture {
+  //margin-left: 160px;
+  height: 310px;
+  width: 300px;
+  background-image: url("../images/footer-puppy.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.suggestion {
+  padding-top: 16px;
+  max-width: 302px;
+  max-height: 236px;
+  padding-right: 138px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.suggestion__title {
+  color: $color-light-xl;
+  @extend %font-primary;
+  @include font (3.5rem, 130%);
+  letter-spacing: 0.06em;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  //padding-top: 40px;
+
+  .contact__email {
+    padding-left: 20px;
+    color: $color-primary;
+    @extend %font-primary;
+    @include font (2rem, 115%);
+    letter-spacing: 0.06em;
+    text-decoration: none;
+  }
+
+  .contact__phone {
+    padding-left: 20px;
+    color: $color-primary;
+    @extend %font-primary;
+    @include font (2rem, 115%);
+    letter-spacing: 0.06em;
+    text-decoration: none;
+  }
+
+  .contact__address {
+    padding-left: 20px;
+    color: $color-primary;
+    @extend %font-primary;
+    @include font (2rem, 115%);
+    letter-spacing: 0.06em;
+  }
+}

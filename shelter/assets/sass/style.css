@@ -453,7 +453,7 @@ template {
   transition: all 0.3s;
 }
 
-.donation__card .donation__number, .donation__text, .support .support__text, .card__pet-name, .button, h4, h3, h2, h1 {
+.donation__card .donation__number, .donation__text, .support .support__text, .contact .contact__address, .contact .contact__phone, .contact .contact__email, .suggestion__title, .card__pet-name, .button, h4, h3, h2, h1 {
   font-family: "Georgia";
 }
 
@@ -612,6 +612,95 @@ h4 {
   align-items: center;
 }
 
+.layout-3-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.layout-2-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer {
+  background-image: url("../images/footer-gradient-background.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer__wrapper {
+  padding-top: 40px;
+}
+
+.footer__picture {
+  height: 310px;
+  width: 300px;
+  background-image: url("../images/footer-puppy.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.suggestion {
+  padding-top: 16px;
+  max-width: 302px;
+  max-height: 236px;
+  padding-right: 138px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.suggestion__title {
+  color: #FFFFFF;
+  font-size: 3.5rem;
+  line-height: 130%;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+}
+.contact .contact__email {
+  padding-left: 20px;
+  color: #F1CDB3;
+  font-size: 2rem;
+  line-height: 115%;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+}
+.contact .contact__phone {
+  padding-left: 20px;
+  color: #F1CDB3;
+  font-size: 2rem;
+  line-height: 115%;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+}
+.contact .contact__address {
+  padding-left: 20px;
+  color: #F1CDB3;
+  font-size: 2rem;
+  line-height: 115%;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+}
+
+.header {
+  background-image: url("../images/start-screen-background.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .logo-link {
   text-decoration: none;
 }
@@ -628,24 +717,6 @@ h4 {
   font-weight: 400;
   letter-spacing: 0.1em;
   margin: 10px 0 0 4px;
-}
-
-.layout-3-column {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.layout-2-column {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.header {
-  background-image: url("../images/start-screen-background.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .not-only {
@@ -797,7 +868,7 @@ h4 {
 }
 
 .donation__wrapper {
-  padding: 80px 0 110px;
+  padding: 80px 0 88px;
 }
 
 .donation__picture {
