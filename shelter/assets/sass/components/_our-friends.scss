@@ -1,3 +1,42 @@
 .our-friends {
   background: $color-light-l;
+  padding: 80px 0 100px;
+}
+
+.our-friends__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.our-friends__title {
+  color: $color-dark-l;
+  text-align: center;
+  max-width: 400px;
+}
+
+
+
+.our-friends__slider {
+  max-width: 1200px;
+  margin: 60px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.our-friends__cards {
+  padding: 0 45px;
+  order: 2;
+}
+
+.our-friends__btn-left {
+  margin-right: 8px;
+  order: 1;
+}
+
+.our-friends__btn-right {
+  margin-left: 8px;
+  order: 3;
 }

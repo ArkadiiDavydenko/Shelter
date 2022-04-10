@@ -1,0 +1,49 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: $color-light-s;
+  height: 435px;
+  width: 270px;
+  @extend %transition;
+
+  &:hover {
+    background: $color-light-xl;
+    cursor: pointer;
+
+    .button {
+      background: $color-primary-light;
+      border: 2px solid $color-primary-light;
+    }
+
+
+}
+
+
+
+}
+.card__img {
+  width: 270px;
+  height: 270px;
+
+  &_katrine {
+    background-image: url("../icons/slider/pets-katrine.svg");
+  }
+  &_jennifer {
+    background-image: url("../icons/slider/pets-jennifer.svg");
+  }
+  &_woody {
+    background-image: url("../icons/slider/pets-woody.svg");
+  }
+}
+
+.card__pet-name {
+  margin: 30px 0 0;
+  @extend %font-primary;
+  @include font (2rem, 2.3rem);
+  letter-spacing: 0.06em;
+}
+
+.card__button {
+  margin: 30px 41.5px;
+}

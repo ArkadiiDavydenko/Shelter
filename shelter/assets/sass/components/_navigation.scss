@@ -20,4 +20,7 @@
     padding-bottom: 3px;
     border-bottom: 3px solid $color-primary;
   }
+  &:hover {
+    color: $color-light-s;
+  }
 }
