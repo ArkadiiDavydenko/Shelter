@@ -1,3 +1,12 @@
+//Our pets
+.controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 340px;
+}
+
+
 
 .control {
   height: 52px;
@@ -27,7 +36,73 @@
   }
 }
 
-
 .control {
   @extend %transition;
 }
+
+
+//Our pets/////////////////////////////////////////////////////////////////////
+.controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 340px;
+
+  .control {
+    height: 52px;
+    width: 52px;
+    background: transparent;
+    border: 2px solid $color-primary;
+    border-radius: 100px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5px;
+
+    &_left-list, &_left {
+      border: 2px solid $color-dark-s;
+      cursor: default;
+    }
+
+    &_number {
+      background: $color-primary;
+      cursor: default;
+    }
+
+    &_left-list::after {
+      color: $color-dark-3xl;
+      content: url("../icons/controls/arrow-list-left.svg");
+    }
+
+    &_left::after {
+      color: $color-dark-s;
+      content: url("../icons/controls/arrow-left-grey.svg");
+    }
+
+    &_number::after {
+      color: $color-dark-3xl;
+      content: "1";
+      @extend %font-primary;
+      @include font (2rem, 115%);
+      letter-spacing: 0.06em;
+    }
+
+    &_right::after {
+      color: $color-dark-3xl;
+      content: url("../icons/controls/arrow-right-grey.svg");
+    }
+
+    &_right-list::after {
+      color: $color-dark-3xl;
+      content: url("../icons/controls/arrow-list-right.svg");
+    }
+
+    &_right:hover, &_right-list:hover  {
+      background: $color-primary-light;
+      border: 2px solid $color-primary-light;
+    }
+  }
+
+}
+

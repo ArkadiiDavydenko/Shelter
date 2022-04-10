@@ -1,20 +1,44 @@
 .header {
-  background-image: url("../images/start-screen-background.svg");
+  background-image: url("../images/start-screen-gradient-background.svg");
   background-size: cover;
   background-repeat: no-repeat;
+
+  .logo-link {
+    text-decoration: none;
+  }
+
+  .logo-link__title {
+    color: $color-primary;
+  }
+
+  .logo-link__subtitle {
+    color: $color-light-xl;
+    @include font (1.3rem, 1.5rem);
+    letter-spacing: 0.1em;
+    margin: 10px 0 0 4px;
+  }
+
 }
 
-.logo-link {
-  text-decoration: none;
+.header-our-pets {
+  position: sticky;
+  top: 0;
+  background: $color-light-xl;
+
+  .logo-link {
+    text-decoration: none;
+  }
+
+  .logo-link__title {
+    color: $color-dark-l;
+  }
+
+  .logo-link__subtitle {
+    color: $color-dark-3xl;
+    @include font (1.3rem, 1.5rem);
+    letter-spacing: 0.1em;
+    margin: 10px 0 0 4px;
+  }
+
 }
 
-.logo-link__title {
-  color: $color-primary;
-}
-
-.logo-link__subtitle {
-  color: $color-light-xl;
-  @include font (1.3rem, 1.5rem);
-  letter-spacing: 0.1em;
-  margin: 10px 0 0 4px;
-}

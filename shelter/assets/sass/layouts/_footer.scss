@@ -63,5 +63,10 @@
     @extend %font-primary;
     @include font (2rem, 115%);
     letter-spacing: 0.06em;
+    text-decoration: none;
+  }
+
+  .contact__map {
+    cursor: pointer;
   }
 }

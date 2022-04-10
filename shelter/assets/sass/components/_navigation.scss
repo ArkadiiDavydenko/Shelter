@@ -16,11 +16,31 @@
   cursor: pointer;
   color: $color-dark-s;
   @extend %transition;
+
   &_active {
     padding-bottom: 3px;
     border-bottom: 3px solid $color-primary;
   }
+
   &:hover {
     color: $color-light-s;
+  }
+}
+
+.header-our-pets {
+  .navigation__link {
+    text-decoration: none;
+    cursor: pointer;
+    color: $color-dark-l;
+    @extend %transition;
+
+    &_active {
+      padding-bottom: 3px;
+      border-bottom: 3px solid $color-primary;
+    }
+
+    &:hover {
+      color: $color-dark-3xl;
+    }
   }
 }

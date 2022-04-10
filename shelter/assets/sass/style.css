@@ -449,11 +449,11 @@ template {
   display: none;
 }
 
-.navigation__link, .card, .control, .button {
+.header-our-pets .navigation__link, .navigation__link, .card, .control, .button {
   transition: all 0.3s;
 }
 
-.donation__card .donation__number, .donation__text, .support .support__text, .contact .contact__address, .contact .contact__phone, .contact .contact__email, .suggestion__title, .card__pet-name, .button, h4, h3, h2, h1 {
+.donation__card .donation__number, .donation__text, .support .support__text, .contact .contact__address, .contact .contact__phone, .contact .contact__email, .suggestion__title, .card__pet-name, .controls .control_number::after, .button, h4, h3, h2, h1 {
   font-family: "Georgia";
 }
 
@@ -463,6 +463,7 @@ template {
 
 :root {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -527,6 +528,13 @@ h4 {
   border: 2px solid #FDDCC4;
 }
 
+.controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 340px;
+}
+
 .control {
   height: 52px;
   width: 52px;
@@ -548,6 +556,62 @@ h4 {
   content: url("../icons/controls/arrow-right.svg");
 }
 .control:hover {
+  background: #FDDCC4;
+  border: 2px solid #FDDCC4;
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 340px;
+}
+.controls .control {
+  height: 52px;
+  width: 52px;
+  background: transparent;
+  border: 2px solid #F1CDB3;
+  border-radius: 100px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5px;
+}
+.controls .control_left-list, .controls .control_left {
+  border: 2px solid #CDCDCD;
+  cursor: default;
+}
+.controls .control_number {
+  background: #F1CDB3;
+  cursor: default;
+}
+.controls .control_left-list::after {
+  color: #292929;
+  content: url("../icons/controls/arrow-list-left.svg");
+}
+.controls .control_left::after {
+  color: #CDCDCD;
+  content: url("../icons/controls/arrow-left-grey.svg");
+}
+.controls .control_number::after {
+  color: #292929;
+  content: "1";
+  font-size: 2rem;
+  line-height: 115%;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+}
+.controls .control_right::after {
+  color: #292929;
+  content: url("../icons/controls/arrow-right-grey.svg");
+}
+.controls .control_right-list::after {
+  color: #292929;
+  content: url("../icons/controls/arrow-list-right.svg");
+}
+.controls .control_right:hover, .controls .control_right-list:hover {
   background: #FDDCC4;
   border: 2px solid #FDDCC4;
 }
@@ -582,6 +646,21 @@ h4 {
 .card__img_woody {
   background-image: url("../icons/slider/pets-woody.svg");
 }
+.card__img_sophia {
+  background-image: url("../icons/slider/pets-sophia.svg");
+}
+.card__img_timmy {
+  background-image: url("../icons/slider/pets-timmy.svg");
+}
+.card__img_charly {
+  background-image: url("../icons/slider/pets-charly.svg");
+}
+.card__img_scarlett {
+  background-image: url("../icons/slider/pets-scarlet.svg");
+}
+.card__img_freddie {
+  background-image: url("../icons/slider/pets-freddie.svg");
+}
 
 .card__pet-name {
   margin: 30px 0 0;
@@ -610,6 +689,10 @@ h4 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+.header-our-pets {
+  padding: 30px 0;
 }
 
 .layout-3-column {
@@ -693,23 +776,24 @@ h4 {
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0.06em;
+  text-decoration: none;
+}
+.contact .contact__map {
+  cursor: pointer;
 }
 
 .header {
-  background-image: url("../images/start-screen-background.svg");
+  background-image: url("../images/start-screen-gradient-background.svg");
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-.logo-link {
+.header .logo-link {
   text-decoration: none;
 }
-
-.logo-link__title {
+.header .logo-link__title {
   color: #F1CDB3;
 }
-
-.logo-link__subtitle {
+.header .logo-link__subtitle {
   color: #FFFFFF;
   font-size: 1.3rem;
   line-height: 1.5rem;
@@ -719,8 +803,29 @@ h4 {
   margin: 10px 0 0 4px;
 }
 
+.header-our-pets {
+  position: sticky;
+  top: 0;
+  background: #FFFFFF;
+}
+.header-our-pets .logo-link {
+  text-decoration: none;
+}
+.header-our-pets .logo-link__title {
+  color: #545454;
+}
+.header-our-pets .logo-link__subtitle {
+  color: #292929;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  margin: 10px 0 0 4px;
+}
+
 .not-only {
-  background-image: url("../images/start-screen-background.svg");
+  background-image: url("../images/start-screen-gradient-background.svg");
   background-size: cover;
   background-position: center -120px;
   background-repeat: no-repeat;
@@ -804,11 +909,11 @@ h4 {
   margin: 60px 0;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
-
-.our-friends__cards {
+.our-friends__slider .our-friends__cards {
   padding: 0 45px;
   order: 2;
 }
@@ -821,6 +926,14 @@ h4 {
 .our-friends__btn-right {
   margin-left: 8px;
   order: 3;
+}
+
+.our-friends__pets .our-friends__slider {
+  width: 1200px;
+  margin: 45px 0;
+}
+.our-friends__pets .our-friends__slider .our-friends__cards {
+  padding: 15px 0;
 }
 
 .help__wrapper {
@@ -957,6 +1070,19 @@ h4 {
 }
 .navigation__link:hover {
   color: #FAFAFA;
+}
+
+.header-our-pets .navigation__link {
+  text-decoration: none;
+  cursor: pointer;
+  color: #545454;
+}
+.header-our-pets .navigation__link_active {
+  padding-bottom: 3px;
+  border-bottom: 3px solid #F1CDB3;
+}
+.header-our-pets .navigation__link:hover {
+  color: #292929;
 }
 
 /*# sourceMappingURL=style.css.map */
