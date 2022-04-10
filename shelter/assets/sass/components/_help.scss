@@ -1,0 +1,39 @@
+.help__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 78px 0 100px;
+}
+
+.help__title {
+  color: $color-dark-l;
+  text-align: center;
+  max-width: 320px;
+  margin-bottom: 59px;
+}
+
+.help__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.support {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 60px 35px;
+
+  .support__icon {
+    height: 60px;
+    width: 60px;
+  }
+
+  .support__text {
+    margin-top: 30px;
+    @extend %font-primary;
+    @include font (2rem, 115%);
+    letter-spacing: 0.06em;
+  }
+}

@@ -453,7 +453,7 @@ template {
   transition: all 0.3s;
 }
 
-.card__pet-name, .button, h4, h3, h2, h1 {
+.support .support__text, .card__pet-name, .button, h4, h3, h2, h1 {
   font-family: "Georgia";
 }
 
@@ -750,6 +750,46 @@ h4 {
 .our-friends__btn-right {
   margin-left: 8px;
   order: 3;
+}
+
+.help__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 78px 0 100px;
+}
+
+.help__title {
+  color: #545454;
+  text-align: center;
+  max-width: 320px;
+  margin-bottom: 59px;
+}
+
+.help__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.support {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 60px 35px;
+}
+.support .support__icon {
+  height: 60px;
+  width: 60px;
+}
+.support .support__text {
+  margin-top: 30px;
+  font-size: 2rem;
+  line-height: 115%;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.06em;
 }
 
 .donation {
