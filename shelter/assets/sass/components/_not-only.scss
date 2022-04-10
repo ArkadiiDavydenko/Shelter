@@ -1,6 +1,7 @@
 .not-only {
   background-image: url("../images/start-screen-background.svg");
   background-size: cover;
+  background-position: center -120px;
   background-repeat: no-repeat;
   padding-top: 60px;
 }
@@ -29,6 +30,7 @@
   height: 728px;
   width: 698px;
   background-image: url("../images/start-screen-puppy.svg");
+  background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }

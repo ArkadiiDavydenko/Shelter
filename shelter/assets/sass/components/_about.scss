@@ -1,8 +1,9 @@
-.about {
-  padding-top: 80px;
+.about__wrapper {
+  padding: 80px 0 88px;
 }
 
 .about__picture {
+  margin-left: 175px;
   height: 408px;
   width: 300px;
   background-image: url("../images/about-pets.svg");
@@ -11,5 +12,19 @@
 }
 
 .about__content {
+  margin-right: 175px;
+  padding-top: 14px;
   max-width: 430px;
+}
+
+.about__title {
+  color: $color-dark-l;
+  max-width: 370px;
+}
+
+.about__text {
+  color: $color-dark-xl;
+  >* {
+    margin: 25px 0;
+  }
 }

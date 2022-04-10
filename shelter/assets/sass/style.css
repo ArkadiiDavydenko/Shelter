@@ -494,6 +494,8 @@ h3 {
   line-height: 130%;
   font-style: normal;
   font-weight: 400;
+  letter-spacing: 0.06em;
+  margin: 0;
 }
 
 h4 {
@@ -501,6 +503,7 @@ h4 {
   line-height: 115%;
   font-style: normal;
   font-weight: 400;
+  margin: 0;
 }
 
 .button {
@@ -579,6 +582,7 @@ h4 {
 .not-only {
   background-image: url("../images/start-screen-background.svg");
   background-size: cover;
+  background-position: center -120px;
   background-repeat: no-repeat;
   padding-top: 60px;
 }
@@ -602,15 +606,17 @@ h4 {
   height: 728px;
   width: 698px;
   background-image: url("../images/start-screen-puppy.svg");
+  background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-.about {
-  padding-top: 80px;
+.about__wrapper {
+  padding: 80px 0 88px;
 }
 
 .about__picture {
+  margin-left: 175px;
   height: 408px;
   width: 300px;
   background-image: url("../images/about-pets.svg");
@@ -619,7 +625,21 @@ h4 {
 }
 
 .about__content {
+  margin-right: 175px;
+  padding-top: 14px;
   max-width: 430px;
+}
+
+.about__title {
+  color: #545454;
+  max-width: 370px;
+}
+
+.about__text {
+  color: #4C4C4C;
+}
+.about__text > * {
+  margin: 25px 0;
 }
 
 .our-friends {

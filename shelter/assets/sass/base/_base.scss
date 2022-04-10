@@ -24,9 +24,12 @@ h2 {
 h3 {
   @extend %font-primary;
   @include font (3.5rem, 130%);
+  letter-spacing: 0.06em;
+  margin: 0;
 }
 
 h4 {
   @extend %font-primary;
   @include font (2rem, 115%);
+  margin: 0;
 }
