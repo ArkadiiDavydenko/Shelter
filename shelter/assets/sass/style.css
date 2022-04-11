@@ -449,6 +449,14 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: "Georgia";
+  src: url("../fonts/georgia.ttf");
+}
+@font-face {
+  font-family: "Arial";
+  src: url("../fonts/arial.ttf");
+}
 .donation__card .donation__number, .donation__text, .support .support__text, .contact .contact__address, .contact .contact__phone, .contact .contact__email, .suggestion__title, .card__pet-name, .controls .control_number::after, .button, h4, h3, h2, h1 {
   font-family: "Georgia";
 }
