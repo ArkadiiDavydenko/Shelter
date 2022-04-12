@@ -40,30 +40,48 @@
   //padding-top: 40px;
 
   .contact__email {
-    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    //padding-left: 20px;
     color: $color-primary;
     @extend %font-primary;
     @include font (2rem, 115%);
     letter-spacing: 0.06em;
     text-decoration: none;
+    h4 {
+      padding-top: 2px;
+      padding-left: 20px;
+    }
   }
 
   .contact__phone {
-    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    //padding-left: 20px;
     color: $color-primary;
     @extend %font-primary;
     @include font (2rem, 115%);
     letter-spacing: 0.06em;
     text-decoration: none;
+    h4 {
+      padding-top: 2px;
+      padding-left: 20px;
+    }
   }
 
   .contact__address {
-    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    //padding-left: 20px;
     color: $color-primary;
     @extend %font-primary;
     @include font (2rem, 115%);
     letter-spacing: 0.06em;
     text-decoration: none;
+    h4 {
+      padding-top: 2px;
+      padding-left: 20px;
+    }
   }
 
   .contact__map {
