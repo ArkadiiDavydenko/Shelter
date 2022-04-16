@@ -692,7 +692,7 @@ h4 {
 }
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 1279px;
   margin: auto;
 }
 
@@ -1078,16 +1078,16 @@ h4 {
 }
 
 .navigation {
+  width: 443px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
   margin: 0;
-  padding-bottom: 5px;
+  padding: 0 0 5px;
 }
 
 .navigation__item {
   list-style: none;
-  padding-left: 36px;
 }
 
 .navigation__link {
