@@ -10,6 +10,14 @@ $color-dark-xl: #4C4C4C;
 $color-dark-2xl: #444444;
 $color-dark-3xl: #292929;
 
-$content-width: 1279px;
+
+$content-width: 1200px;
+//tablet
+$content-tablet-width: 708px;
+//mobile
+//$content-mobile-width: 1200px;
+
+//@media
+$laptop-width: 1279px;
 $tablet-width: 767px;
 $mobile-width: 319px;
