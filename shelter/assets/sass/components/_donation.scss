@@ -4,6 +4,9 @@
 
 .donation__wrapper {
   padding: 80px 0 88px;
+  @include media-laptop {
+    padding: 80px 0 100px;
+  }
 }
 
 .donation__picture {
@@ -14,11 +17,20 @@
   background-image: url("../images/donation-dog.svg");
   background-size: contain;
   background-repeat: no-repeat;
+  @include media-laptop {
+    margin-top: 48px;
+    margin-left: 0;
+    order: 2;
+  }
 }
 
 .donation__content {
   margin-right: 142px;
   max-width: 380px;
+  @include media-laptop {
+    order: 1;
+    margin-right: 0;
+  }
 }
 
 .donation__title {
@@ -53,6 +65,10 @@
     letter-spacing: 0.06em;
     text-decoration: none;
     margin-left: 15px;
+
+    @include media-tablet {
+      @include font (1.5rem, 115%);
+    }
   }
 }
 

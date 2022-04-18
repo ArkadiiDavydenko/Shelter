@@ -1,30 +1,47 @@
 .footer {
-  background-image: url("../images/footer-gradient-background.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: url(../images/bg-noise2.png) 42px 38px, radial-gradient(63% 257% at 1% 104%, #5b483c -1%, #262425 93%), #211f20;
+  //background-image: url("../images/footer-gradient-background.svg");
+  //background-size: cover;
+  //background-repeat: no-repeat;
 }
 
 .footer__wrapper {
-  padding-top: 40px
+  padding-top: 40px;
+  @include media-laptop {
+    padding-top: 30px;
+  }
 }
 
 .footer__picture {
-  //margin-left: 160px;
   height: 310px;
   width: 300px;
   background-image: url("../images/footer-puppy.svg");
   background-size: contain;
   background-repeat: no-repeat;
+  @include media-laptop {
+    margin-top: 60px;
+  }
 }
+
+//.suggestion-column {
+//  @include media-laptop {
+//    max-width: 100%;
+//    justify-content: space-between;
+//    //margin-top: 60px;
+//  }
+//}
 
 .suggestion {
   padding-top: 16px;
-  max-width: 302px;
-  max-height: 236px;
   padding-right: 138px;
+  max-width: 302px;
+  height: 236px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @include media-laptop {
+    padding: 0 20px;
+  }
 }
 
 .suggestion__title {
@@ -37,6 +54,7 @@
 .contact {
   display: flex;
   flex-direction: row;
+
   //padding-top: 40px;
 
   .contact__email {
@@ -79,8 +97,8 @@
     letter-spacing: 0.06em;
     text-decoration: none;
     h4 {
-      padding-top: 2px;
-      padding-left: 20px;
+      //padding-top: 2px;
+      padding-left: 18px;
     }
   }
 

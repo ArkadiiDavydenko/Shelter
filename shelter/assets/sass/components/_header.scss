@@ -1,7 +1,8 @@
 .header {
-  background-image: url("../images/start-screen-gradient-background.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: url(../images/bg-noise2.png) 42px 38px, radial-gradient(63% 257% at 1% 104%, #5b483c -1%, #262425 93%), #211f20;
+  //background-image: url("../images/start-screen-gradient-background.svg");
+  //background-size: cover;
+  //background-repeat: no-repeat;
 
   .logo-link {
     text-decoration: none;

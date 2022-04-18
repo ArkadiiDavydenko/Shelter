@@ -1,5 +1,9 @@
 .header {
   padding-top: 60px;
+
+  @include media-laptop {
+    padding-top: 30px;
+  }
 }
 
 .header__wrapper {
@@ -7,6 +11,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
 }
 
 .header-our-pets {

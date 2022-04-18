@@ -1,36 +1,66 @@
 .not-only {
-  background-image: url("../images/start-screen-gradient-background.svg");
-  background-size: cover;
-  background-position: center -120px;
-  background-repeat: no-repeat;
+  background: url(../images/bg-noise2.png), radial-gradient(60% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
+  //background-image: url("../images/start-screen-gradient-background.svg");
+  //background-size: cover;
+  //background-position: center -120px;
+  //background-repeat:repeat;
   padding-top: 60px;
+  @include media-laptop {
+    background: url(../images/bg-noise2.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211f20;
+  }
 }
 
 .not-only__content {
   margin-top: 163px;
   max-width: 460px;
+  @include media-laptop {
+    margin: 0;
+  }
+  @include media-tablet {
+    text-align: center;
+  }
 }
 
 .not-only__title {
   max-width: 310px;
   color: $color-light-xl;
+  @include media-tablet {
+    padding: 0 20px;
+  }
 }
 
 .not-only__text {
   color: $color-dark-s;
   margin: 42px 0 39px;
+
+  @include media-tablet {
+    margin: 42px 0 42px;
+  }
 }
 
-//.not-only__buttons {
-//  width: 207px;
-//  height: 52px;
-//}
+.not-only__buttons {
+  @include media-laptop {
+    text-align: center;
+  }
+}
 
 .not-only__picture {
   height: 728px;
   width: 698px;
-  background-image: url("../images/start-screen-puppy.svg");
+  background-image: url("../images/start-screen-puppy768.svg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+
+  @include media-laptop {
+    margin: 100px 0 0 auto;
+    width: 569px;
+    height: 593px;
+  }
+
+  @include media-tablet {
+    margin: 105px 0 0 auto;;
+    width: 260px;
+    height: 271.77px;
+  }
 }
