@@ -48,6 +48,10 @@
   justify-content: space-between;
   width: 340px;
 
+  @include media-tablet {
+    max-width: 300px;
+  }
+
   .control {
     height: 52px;
     width: 52px;

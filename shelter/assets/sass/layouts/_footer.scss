@@ -10,6 +10,9 @@
   @include media-laptop {
     padding-top: 30px;
   }
+  @include media-tablet {
+    padding-top: 0;
+  }
 }
 
 .footer__picture {
@@ -18,18 +21,17 @@
   background-image: url("../images/footer-puppy.svg");
   background-size: contain;
   background-repeat: no-repeat;
+
   @include media-laptop {
     margin-top: 60px;
   }
+  @include media-tablet {
+    margin-top: 40px;
+    width: 260px;
+    height: 269px;
+  }
 }
 
-//.suggestion-column {
-//  @include media-laptop {
-//    max-width: 100%;
-//    justify-content: space-between;
-//    //margin-top: 60px;
-//  }
-//}
 
 .suggestion {
   padding-top: 16px;
@@ -42,20 +44,37 @@
   @include media-laptop {
     padding: 0 20px;
   }
+  @include media-tablet {
+    //text-align: center;
+    //align-items: center;
+    height: 238px;
+    padding: 0;
+  }
+}
+
+.suggestion__map {
+  @include media-tablet {
+    height: 252px;
+    padding: 10px 0 0;
+  }
 }
 
 .suggestion__title {
   color: $color-light-xl;
   @extend %font-primary;
-  @include font (3.5rem, 130%);
-  letter-spacing: 0.06em;
+
+  @include media-tablet {
+    text-align: center;
+    padding: 30px 10px 0;
+  }
 }
 
 .contact {
   display: flex;
   flex-direction: row;
 
-  //padding-top: 40px;
+
+
 
   .contact__email {
     display: flex;
@@ -63,9 +82,14 @@
     //padding-left: 20px;
     color: $color-primary;
     @extend %font-primary;
-    @include font (2rem, 115%);
+    @include font(2rem, 115%);
     letter-spacing: 0.06em;
     text-decoration: none;
+
+    @include media-tablet {
+      margin-left: 25px;
+    }
+
     h4 {
       padding-top: 2px;
       padding-left: 20px;
@@ -78,31 +102,51 @@
     //padding-left: 20px;
     color: $color-primary;
     @extend %font-primary;
-    @include font (2rem, 115%);
+    @include font(2rem, 115%);
     letter-spacing: 0.06em;
     text-decoration: none;
+
+    @include media-tablet {
+      margin-left: 30px;
+    }
+
     h4 {
       padding-top: 2px;
       padding-left: 20px;
+      @include media-tablet {
+        padding-top: 5px;
+      }
     }
   }
 
   .contact__address {
     display: flex;
     flex-direction: row;
-    //padding-left: 20px;
     color: $color-primary;
     @extend %font-primary;
-    @include font (2rem, 115%);
+    @include font(2rem, 115%);
     letter-spacing: 0.06em;
     text-decoration: none;
+
+    @include media-tablet {
+      max-width: 100%;
+      justify-content: start;
+      padding-top: 40px;
+      align-items: center;
+    }
+
     h4 {
-      //padding-top: 2px;
-      padding-left: 18px;
+      //padding-left: 18px;
+      @include media-tablet {
+        padding: 0;
+      }
     }
   }
 
   .contact__map {
     cursor: pointer;
+    margin-right: 20px;
+    width: 22px;
+    height: 32px;
   }
 }

@@ -1,6 +1,10 @@
 .our-friends {
   background: $color-light-l;
   padding: 80px 0 100px;
+
+  @include media-tablet {
+    padding: 42px 0 42px;
+  }
 }
 
 .our-friends__wrapper {
@@ -23,8 +27,20 @@
   gap: 45px;
   justify-content: space-between;
   align-items: center;
+
   @include media-laptop {
+    width: 708px;
     gap: 5px;
+  }
+  @include media-tablet {
+    width: 270px;
+    gap: 5px;
+  }
+
+  @include media-tablet {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 42px 0;
   }
 
 
@@ -37,8 +53,12 @@
     gap: 90px;
     justify-content: space-between;
     align-items: center;
+
     @include media-laptop {
       gap: 40px;
+    }
+    @include media-tablet {
+      order: 1;
     }
   }
 }
@@ -46,11 +66,18 @@
 .our-friends__btn-left {
   margin-right: 8px;
   order: 1;
+  @include media-tablet {
+    margin:12px 37px 0 0;
+    order: 2;
+  }
 }
 
 .our-friends__btn-right {
   margin-left: 8px;
   order: 3;
+  @include media-tablet {
+    margin:12px 0 0 37px;
+  }
 }
 
 
@@ -59,12 +86,19 @@
 
   @include media-laptop {
     padding: 80px 0 76px;
+
+    @include media-tablet {
+      padding: 42px 0 42px;
+    }
   }
   .our-friends__slider {
     width: 1200px;
     margin: 45px 0;
     @include media-laptop {
       margin: 30px 0 40px;
+    }
+    @include media-tablet {
+      margin: 42px 0 40px;
     }
 
     .our-friends__cards {

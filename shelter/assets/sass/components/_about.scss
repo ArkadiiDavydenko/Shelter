@@ -3,6 +3,9 @@
   @include media-laptop {
     padding: 80px 0 100px;
   }
+  @include media-tablet {
+    padding: 42px 0 42.4px;
+  }
 }
 
 .about__picture {
@@ -12,8 +15,15 @@
   background-image: url("../images/about-pets.svg");
   background-size: contain;
   background-repeat: no-repeat;
+
   @include media-laptop {
     margin: 53px 0 0 0;
+    order: 2;
+  }
+  @include media-tablet {
+    width: 260px;
+    height: 353.6px;
+    margin: 19px 0 0 0;
     order: 2;
   }
 }
@@ -32,12 +42,24 @@
 .about__title {
   color: $color-dark-l;
   max-width: 370px;
+  @include media-tablet {
+    text-align: center;
+    padding: 0 20px;
+  }
 }
 
 .about__text {
   color: $color-dark-xl;
+  @include media-tablet {
+    text-align: center;
+  }
 
   > * {
     margin: 25px 0;
+    @include media-tablet {
+      max-width: 270px;
+      text-align: justify;
+      margin: 23px auto;
+    }
   }
 }

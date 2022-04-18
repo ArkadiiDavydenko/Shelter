@@ -8,9 +8,6 @@
   height: 2px;
 }
 
-.header__hamburger {
-  margin-right: 2px;
-}
 
 .hamburger {
   display: none;
@@ -36,4 +33,13 @@
   @extend %hamburger-line;
   top: calc( 50% - 1.5px );
   left: 0;
+}
+
+//Our pets
+.header-our-pets {
+  %hamburger-line {
+    background-color: #000000;
+
+  }
+
 }

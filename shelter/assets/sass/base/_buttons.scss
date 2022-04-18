@@ -15,6 +15,11 @@
     background: $color-primary-light;
     border: 2px solid $color-primary-light;
   }
+
+  @include media-tablet {
+    height: 52px;
+    padding: 11px 42px 14px;
+  }
 }
 
 

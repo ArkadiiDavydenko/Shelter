@@ -4,9 +4,14 @@
 
 .donation__wrapper {
   padding: 80px 0 88px;
+
   @include media-laptop {
     padding: 80px 0 100px;
   }
+  @include media-tablet {
+    padding: 42px 0 42px;
+  }
+
 }
 
 .donation__picture {
@@ -22,6 +27,11 @@
     margin-left: 0;
     order: 2;
   }
+  @include media-tablet {
+    margin-top: 21px;
+    width: 260px;
+    height: 135.2px;
+  }
 }
 
 .donation__content {
@@ -31,11 +41,17 @@
     order: 1;
     margin-right: 0;
   }
+  @include media-tablet {
+    text-align: center;
+  }
 }
 
 .donation__title {
   color: $color-dark-l;
   max-width: 300px;
+  @include media-tablet {
+    padding: 0 40px;
+  }
 }
 
 .donation__text {
@@ -44,6 +60,10 @@
   @extend %font-primary;
   @include font (1.5rem, 110%);
   letter-spacing: 0.06em;
+  @include media-tablet {
+    letter-spacing: 0;
+    padding: 8px 0;
+  }
 }
 
 .donation__card {
@@ -73,9 +93,27 @@
 }
 
 .donation__text-cursive {
-  margin-top: 20px;
+  //max-width: 280px;
+  //margin: 20px auto 0;
+  max-width: 380px;
+  margin: 20px auto 0;
   color: $color-dark-m;
   @extend %font-add;
   @include font (1.2rem, 1.8rem, italic);
+
+  @include media-tablet {
+    max-width: 280px;
+    text-align: justify;
+  }
+
+
+  > * {
+    //margin: 25px 0;
+    @include media-tablet {
+      //max-width: 280px;
+      text-align: justify;
+      margin: 21px auto;
+    }
+  }
 
 }

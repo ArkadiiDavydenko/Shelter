@@ -19,8 +19,19 @@
     margin: 10px 0 0 4px;
   }
 
-}
 
+  .header__logo {
+    @include media-tablet {
+      width: 257px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+}
+//Our-pets
 .header-our-pets {
   position: sticky;
   top: 0;
