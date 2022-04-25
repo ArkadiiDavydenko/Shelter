@@ -1,8 +1,5 @@
 .header {
   background: url(../images/bg-noise2.png) 42px 38px, radial-gradient(63% 257% at 1% 104%, #5b483c -1%, #262425 93%), #211f20;
-  //background-image: url("../images/start-screen-gradient-background.svg");
-  //background-size: cover;
-  //background-repeat: no-repeat;
 
   .logo-link {
     text-decoration: none;
@@ -22,15 +19,64 @@
 
   .header__logo {
     @include media-tablet {
+
       width: 257px;
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
+      position: relative;
+      z-index: 100;
     }
   }
-
 }
+
+.none-scroll {
+  overflow-y:hidden
+}
+
+.modal__backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.header__navigation_column {
+  @include media-tablet {
+    overflow: hidden;
+    width: 320px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.header__navigation {
+
+  @include media-tablet {
+    //display: none;
+      width: 320px;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      right: -320px;
+      z-index: 50;
+      padding-top: 50%;
+      background: $color-dark-3xl;
+      transition: all 1s;
+  }
+}
+
+.transition-left {
+  right: 0;
+  //display: block;
+}
+
 //Our-pets
 .header-our-pets {
   position: sticky;

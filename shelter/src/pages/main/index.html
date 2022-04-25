@@ -12,23 +12,29 @@
 </head>
 <body>
 <header class="header">
+
     <div class="wrapper header__wrapper">
         <div class="header__logo">
             <a href="#" class="logo-link">
                 <h1 class="logo-link__title">Cozy House</h1>
                 <p class="logo-link__subtitle">Shelter for pets in Boston</p>
             </a>
-            <span class="header__hamburger hamburger"><span class="hamburger__line"></span></span>
+            <span class="header__hamburger hamburger">
+                <span class="hamburger__line"></span>
+            </span>
         </div>
-        <nav class="header__navigation">
-            <ul class="navigation">
-                <li class="navigation__item"><a href="#" class="navigation__link navigation__link_active">About the
-                    shelter</a></li>
-                <li class="navigation__item"><a href="../pets/index.html" class="navigation__link">Our pets</a></li>
-                <li class="navigation__item"><a href="#help" class="navigation__link">Help the shelter</a></li>
-                <li class="navigation__item"><a href="#footer" class="navigation__link">Contacts</a></li>
-            </ul>
-        </nav>
+        <div class="header__navigation_column">
+            <div class="modal"></div>
+            <nav class="header__navigation">
+                <ul class="navigation">
+                    <li class="navigation__item"><a href="#" class="navigation__link navigation__link_active">About the
+                        shelter</a></li>
+                    <li class="navigation__item"><a href="../pets/index.html" class="navigation__link">Our pets</a></li>
+                    <li class="navigation__item"><a href="#help" class="navigation__link">Help the shelter</a></li>
+                    <li class="navigation__item"><a href="#footer" class="navigation__link">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
 </header>
 <main>
@@ -230,5 +236,6 @@
         </div>
     </div>
 </footer>
+<script src="../../index.js"></script>
 </body>
 </html>
